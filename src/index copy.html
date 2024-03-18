@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruci</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+    <style>
+        .bg-parallax {
+            background-image: url('../img/spice.png'); /* Replace with your image path */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        </style>
+</head>
+
+<body>
+   
+    <header class="relative bg-sky-50 h-[50vh] lg:h-screen">
+        <div class="relative overflow-hidden h-[50vh] lg:h-screen">
+
+            <img class="absolute  h-[30vh] lg:h-[85vh] z-10 blur-2xl  right-[10vh] lg:right-24 bottom-28 md:bottom-10 animate-spin-slow"
+                src="../img/a3.png" alt="">
+            <img class="absolute hidden  h-[14vh] lg:h-[85vh] z-10  drop-shadow-md shadow-black right-[20vh] lg:right-24 bottom-44 md:bottom-10 "
+                src="../img/p2.png" alt="">
+          
+
+
+            <div id="header"
+                class="fixed bg-gradient-to-l to-cyan-300 from-customBlue   top-0 left-0  w-full  z-10 shadow-2xl  ">
+
+
+
+                <nav class=" px-10   py-4 flex">
+                    <div>
+                        <a href="#"><img class="w-16" src="../img/logo.png" alt="RUCI"></a>
+                    </div>
+                    <div class="ml-auto pt-3 flex gap-10">
+                        <div class="hidden  lg:block">
+                            <ul  class="flex gap-5">
+
+                                <li
+                                    class="hover:text-secondaryc hover:border-b-2 pb-2 hover:transition-transform hover:easy-in-out hover:border-secondaryc ">
+                                    <a href="index.html">Home</a>
+                                </li>
+                                <li
+                                    class="hover:text-secondaryc hover:border-b-2 pb-2 hover:transition-transform hover:easy-in-out hover:border-secondaryc ">
+                                    <a href="product.html">Products</a>
+                                </li>
+                                <li
+                                    class="hover:text-secondaryc hover:border-b-2 pb-2 hover:transition-transform hover:easy-in-out hover:border-secondaryc ">
+                                    <a href="about.html">About us</a>
+                                </li>
+                                <li
+                                    class="hover:text-secondaryc hover:border-b-2 pb-2 hover:transition-transform hover:easy-in-out hover:border-secondaryc ">
+                                    <a href="#">Contact us</a>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                        <div class="hidden  lg:block">
+                            <a class="px-3 py-2 bg-cyan-500 rounded-3xl shadow-lg text-white " href="#">Download</a>
+                        </div>
+
+                        <div id="menu-bar" class="text-black ml-auto  pr-1 font-bold  hover:text-white lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-9 h-9">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                            </svg>
+                        </div>
+                    </div>
+                </nav>
+
+                <nav class="">
+
+                    <div id="mobil-menu" class=" backdrop-blur-xl bg-transparent border-customBlue    transform translate-x-full opacity-0 transition ease-out duration-500 z-50 
+                     shadow-lg rounded-tl-3xl shadow-black bottom-0 w-2/3 hidden h-[100vh] fixed text-4xl text-black top-0 right-0">
+
+
+                        <div class="bg-transparent backdrop-blur-xl absolute top-0  w-full h-20 rounded-tl-3xl "></div>
+
+
+                        <div class="flex">
+                            <ul class="gap-7 flex px-10 py-10 mt-12 text-lg flex-col">
+
+                                <li><a href="index.html"
+                                        class="hover:text-secondaryc flex  hover:border-b-2 border-secondaryc ">
+                                        <span> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="w-4 h-5 mr-1 mt-1">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                                            </svg>
+                                        </span> Home</a></li>
+                                <li><a href="product.html"
+                                        class="hover:text-secondaryc flex  hover:border-b-2 border-secondaryc ">
+                                        <span> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="w-4 h-5 mr-1 mt-1">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                                            </svg>
+                                        </span> Products</a></li>
+                                <li><a href="about.html"
+                                        class="hover:text-secondaryc flex  hover:border-b-2 border-secondaryc ">
+                                        <span> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="w-4 h-5 mr-1 mt-1">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                                            </svg>
+                                        </span> About</a></li>
+                                <li><a href="contact.html"
+                                        class="hover:text-secondaryc flex  hover:border-b-2 border-secondaryc ">
+                                        <span> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="w-4 h-5 mr-1 mt-1">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                                            </svg>
+                                        </span> Contact us</a></li>
+                            </ul>
+
+                        </div>
+                        <div id="no-menu" class="absolute top-7 hover:text-black text-white  right-10">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-8 h-8">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                            </svg>
+
+                        </div>
+                    </div>
+                </nav>
+
+
+            </div>
+            
+            <div class="absolute pl-10   pb-10 lg:px-36 pt-10 lg:pt-0 top-72 lg:top-72 w-full flex flex-wrap">
+                <h1
+                    class="bg-gradient-to-l  to-cyan-300 from-customBlue text-3xl lg:text-7xl bg-clip-text text-transparent font-bold">
+                    Healthy South
+                    <span id="typing-text" class="text-cyan-300">Indian</span><br> <span> Products</span>  <br> 
+                    <span class="text-white text-sm "><a class="px-3 py-2 rounded-3xl bg-gradient-to-l  to-cyan-300 from-customBlue" href="product.html">View Products</a>
+                    </span>
+                </h1>
+               
+                <br>
+              
+
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+        <section class="flex items-center flex-col lg:justify-center md:justify-center  mt-20 w-full bg-white">
+            <div class="flex flex-col  lg:px-32 md:px-32 px-10">
+                
+
+                <h1
+                class="bg-gradient-to-l  to-cyan-300 from-customBlue lg:text-5xl md:text-2xl text-xl font-bold bg-clip-text text-transparent ">
+                Our Features   
+              </h1>
+              <div  class="h-0.5 w-20 bg-sky-400 mt-2"></div>
+
+               
+                <p  class="lg:text-center lg:text-2xl md:text-xl text-s text-justify mt-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint tempora fuga
+                    id cupiditate, illo, praesentium ab voluptatum, laboriosam aspernatur consequatur possimus deserunt
+                    dicta in reiciendis similique itaque quia quam minima.</p>
+
+            </div>   
+            <div class="w-full py-20 gap-10 mt-10 flex flex-wrap justify-center items-center bg-cover bg-center" style="background-image: url('../img/spice.png');">
+    
+
+                <div class="flex flex-row gap-10 justify-center py-5 px-3 w-36 h-52 lg:w-72 lg:h-96 bg-transparent backdrop-blur-xl shadow-2xl  rounded-2xl ">
+                    <div class="flex gap-2 flex-col items-center">
+                        <img class="h-14" src="../img/icon-1.png" alt="">
+                        <h1 class="text-green-900">Natural Process</h1>
+                        <h1 class="text-black mt-2 text-center text-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet </h1>
+                    </div>
+                </div>
+                <div class="flex flex-row gap-10 justify-center py-5 px-3 w-36 h-52 lg:w-72 lg:h-96 bg-transparent backdrop-blur-xl shadow-2xl  rounded-2xl ">
+                    <div class="flex gap-2 flex-col items-center">
+                        <img class="h-14" src="../img/icon-1.png" alt="">
+                        <h1 class="text-green-900">Natural Process</h1>
+                        <h1 class="text-black mt-2 text-center text-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet </h1>
+                    </div>
+                </div>
+               
+                
+                
+            </div>
+        </section>
+        <section class="flex items-center flex-col lg:justify-center md:justify-center  mt-20 w-full bg-white">
+            <div class="flex flex-col  lg:px-32 md:px-32 px-10">
+              
+                <h1
+                class="bg-gradient-to-l  to-cyan-300 from-customBlue lg:text-5xl md:text-2xl text-xl font-bold bg-clip-text text-transparent ">
+                Our Products   
+              </h1>
+
+                <div  class="h-0.5 w-20 bg-sky-400 mt-2"></div>
+                <p  class="lg:text-center lg:text-2xl md:text-xl text-s text-justify mt-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint tempora fuga
+                    id cupiditate, illo, praesentium ab voluptatum, laboriosam aspernatur consequatur possimus deserunt
+                    dicta in reiciendis similique itaque quia quam minima.</p>
+            </div>  
+                  
+            <div class="w-full py-20 gap-10 lg:gap-10 mt-10 relative flex flex-wrap justify-center items-center bg-cover bg-center " >
+    
+
+                <div class="flex flex-row gap-10 justify-center py-5 relative w-40 h-60 lg:w-72 lg:h-96  rounded-t-2xl">
+                     <img class="absolute top-0 h-40 w-auto rounded-t-2xl" src="../img/p2.png" alt="">
+                     <div class="absolute bottom-0 w-full   rounded-2xl">
+                         <div class="flex  pb-3 pt-2  flex-col items-center">
+                             
+                             <h2 class="text-black text-md  lg:text-xl ">Product Name</h2>
+                             <a href="product_view.html" class="mt-2 px-4 py-1  bg-gradient-to-bl from-customBlue to-cyan-300 text-white font-semibold rounded">View</a>
+ 
+                         </div>
+                     </div>
+                 </div>
+                 <div class="flex flex-row gap-10 justify-center py-5 relative w-40 h-60 lg:w-72 lg:h-96  rounded-t-2xl">
+                     <img class="absolute top-0 h-40 w-auto rounded-t-2xl" src="../img/p2.png" alt="">
+                     <div class="absolute bottom-0 w-full border-t-2 border-customBlue shadow-2xl rounded-2xl">
+                         <div class="flex  pb-3 pt-2  flex-col items-center">
+                             
+                             <h2 class="text-black text-md  lg:text-xl font-semibold">Product Name</h2>
+                             <a href="product_view.html" class="mt-2 px-4 py-1  bg-gradient-to-bl from-customBlue to-cyan-300 text-white font-semibold rounded-3xl">View</a>
+ 
+                         </div>
+                     </div>
+                 </div> 
+ 
+                 
+ 
+                 <div class="flex   relative w-72 h-52 lg:w-72 lg:h-96   rounded-2xl">
+                     <div class="flex h-36 w-auto shadow-inner shadow-black my-8 bg-white  rounded-l-3xl justify-center items-center">
+                         <img class="h-32 w-auto  items-center  justify-center rounded-tl-2xl px-5" src="../img/p2.png" alt="">
+                     </div>
+                     <div class=" rounded-2xl bg-gradient-to-bl from-customBlue to-cyan-300  shadow-xl flex flex-col p-6 items-center justify-center h-full w-44 pt-10">
+                         <h2 class="text-white text-md lg:text-xl mb-4">Product Name</h2>
+                         <a href="product_view.html" class="px-4 py-1 bg-white  text-violet-500 border-2 border-violet-500 font-semibold rounded-3xl">View</a>
+                     </div>
+                     
+                     
+                 </div>
+ 
+ 
+ 
+                 <div class="flex flex-col   justify-center py-5 relative w-40 h-60 lg:w-72 lg:h-96 rounded-t-2xl">
+                     <div class="flex relative h-36 w-full shadow-inner shadow-black bg-white rounded-t-3xl justify-center items-center">
+                         <img class="h-32 w-auto items-center justify-center rounded-tl-2xl px-5" src="../img/p2.png" alt="">
+                     </div>
+                   
+                     <div class="relative w-full  border-2 border-customBlue shadow-2xl rounded-b-2xl ">
+                         <div class="flex pb-3 pt-2  flex-col items-center">
+                             <h2 class="text-black text-md lg:text-xl font-bold">Product Name</h2>
+                             <a href="product_view.html" class="mt-2 px-4 py-1 bg-gradient-to-bl from-customBlue to-cyan-300 text-white font-semibold rounded-3xl">View</a>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="flex flex-col   justify-center py-5 relative w-40 h-60 lg:w-72 lg:h-96 rounded-t-2xl">
+                     <div class="flex relative h-36 w-full shadow-inner shadow-black bg-white rounded-t-3xl justify-center items-center">
+                         <img class="h-32 w-auto items-center justify-center rounded-tl-2xl px-5" src="../img/p2.png" alt="">
+                     </div>
+                   
+                     <div class="relative w-full    bg-gradient-to-bl from-customBlue to-cyan-300 shadow-2xl rounded-b-2xl ">
+                         <div class="flex pb-3 pt-2  flex-col items-center">
+                             <h2 class="text-white text-md lg:text-xl font-semibold">Product Name</h2>
+                             <a href="product_view.html" class="mt-2 px-4 py-1 bg-white  shadow-inner text-Black shadow-customBlue font-semibold rounded-3xl">View</a>
+                         </div>
+                     </div>
+                 </div>
+
+                 
+                 
+             </div>
+            
+           
+           
+        </section>
+
+        
+<section  class="mt-20 ">
+    <div class="h-96 bg-transparent shadow-inner rounded-3xl shadow-black flex  items-center bg-fixed bg-parallax">
+        <div class="bg-transparent backdrop-blur-2xl lg:px-32 md:px-28 px-5 lg:ml-20 md:ml-16 ml rounded-3xl  shadow-black shadow-2xl  text-center py-24">
+            <h1 class="text-lg text-black sm:text-base md:text-xs lg:text-lg"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam impedit eveniet maxime fuga aperiam 
+
+            </h1>
+            <div class="flex">
+                <a
+            class="  hover:text-secondaryc border-secondaryc border-2 cursor-pointer hover:shadow-2xl hover:bg-white bg-secondaryc text-white text-center mb-3 mt-2 mx-auto flex gap-2 rounded-3xl  px-3 py-2 shadow-lg ">
+            View Details</a>
+
+            </div>
+            
+            
+        </div>
+    </div>
+</section>
+
+
+    </main>
+
+    <footer   class="rounded-t-3xl  mt-32  shadow-2xl shadow-secondaryc ">
+        <section class="bg-white  rounded-t-3xl shadow-2xl pt-20 shadow-black border-2 border-x-secondaryc border-t-secondaryc  text-black">
+         <div class="flex flex-col sm:flex-row gap-5 w-full justify-between px-5 pb-14 lg:px-20 lg:pb-32">
+             <!-- First Column -->
+             <div  class="flex flex-col">
+                <a href="index.html#home"><img src="../img/ruci-logo.png" alt="" class="w-20 mx-auto"></a> 
+                 <p>Natural food product</p>
+                 <div class="d-flex pt-2">
+                     <a class="btn btn-square btn-outline-light rounded-circle me-1" href=""><i class="fab fa-twitter"></i></a>
+                     <a class="btn btn-square btn-outline-light rounded-circle me-1" href=""><i class="fab fa-facebook-f"></i></a>
+                     <a class="btn btn-square btn-outline-light rounded-circle me-1" href=""><i class="fab fa-youtube"></i></a>
+                     <a class="btn btn-square btn-outline-light rounded-circle me-0" href=""><i class="fab fa-linkedin-in"></i></a>
+                 </div>
+             </div>
+     
+             <!-- Second Column -->
+             <div  class="flex flex-col">
+                 <p class=" font-bold text-lg" >Address 
+                     <div class="w-14 h-1 mb-2 bg-secondaryc"></div>
+                 </p>
+                 <div class="group mt-2">
+                     <a class="btn btn-link flex  group-hover:transition group-hover:translate-x-3 group-hover:text-secondaryc   " href="">  <span class=" group-hover:text-secondaryc  " ><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 mt-1 h-4">
+                         <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                     </svg> </span>India
+                     </a>
+                 </div>
+                 <div class="group mt-2">
+                     <a class="btn btn-link flex  group-hover:transition group-hover:translate-x-3 group-hover:text-secondaryc   " href="">  <span class=" group-hover:text-secondaryc  " ><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 mt-1 h-4">
+                         <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                     </svg> </span>ruci@gmail.com
+                     </a>
+                 </div>
+ 
+             </div>
+     
+             <!-- Third Column -->
+             <div  class="flex flex-col ">
+                 <p class=" font-bold text-lg " >Quick Links
+                     <div class="w-14 h-1 mb-2 bg-secondaryc "></div>
+                 </p>
+ 
+                 <div class="group mt-2">
+                     <a class="btn btn-link flex  group-hover:transition group-hover:translate-x-3 group-hover:text-secondaryc   " href="">  <span class=" group-hover:text-secondaryc  " ><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 mt-1 h-4">
+                         <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                     </svg> </span> Home
+                     </a>
+                 </div>
+                 <div class="group mt-2">
+                     <a class="btn btn-link flex  group-hover:transition group-hover:translate-x-3 group-hover:text-secondaryc   " href="">  <span class=" group-hover:text-secondaryc  " ><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 mt-1 h-4">
+                         <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                     </svg> </span> Products
+                     </a>
+                 </div>
+                 <div class="group mt-2">
+                     <a class="btn btn-link flex  group-hover:transition group-hover:translate-x-3 group-hover:text-secondaryc   " href="">  <span class=" group-hover:text-secondaryc  " ><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 mt-1 h-4">
+                         <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                     </svg> </span> About Us
+                     </a>
+                 </div>
+                 <div class="group mt-2">
+                     <a class="btn btn-link flex  group-hover:transition group-hover:translate-x-3 group-hover:text-secondaryc   " href="">  <span class=" group-hover:text-secondaryc  " ><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 mt-1 h-4">
+                         <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                     </svg> </span> Contact Us
+                     </a>
+                 </div>
+                 
+                 
+ 
+             </div>
+     
+             <!-- Fourth Column -->
+             <div class="flex flex-col">
+                 <p class=" font-bold text-lg " >Subscribe
+                     <div class="w-14 h-1 mb-2 bg-secondaryc "></div>
+                 </p>
+                 <p class="  text-lg" > </p>
+                 <div class="position-relative mx-auto" style="max-width: 400px;">
+                     <input class="form-control bg-transparent w-100 py-3 px-2 border-secondaryc border-2 focus-visible:border-secondaryc rounded-l-3xl" type="text" placeholder="Your email">
+                     <button type="button" class=" bg-secondaryc px-2 py-3 text-white position-absolute top-0 end-0 mt-2 me-2 rounded-r-3xl">Sign-Up</button>
+                 </div>
+             </div>
+         </div>
+         <!-- Copyright Section -->
+         <div  class="container-fluid">
+             <div class="container">
+                 <div class="row">
+                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                         &copy; <a href="#">Ruci</a>, All Right Reserved.
+                     </div>
+                 </div>
+             </div>
+         </div>
+ 
+        </section>
+        
+     </footer>
+     
+
+
+    <script>
+        function startTypingAnimation() {
+            const textElement = document.getElementById('typing-text');
+            const text = textElement.innerText;
+            textElement.innerText = '';
+
+            let i = 0;
+            function typeWriter() {
+                if (i < text.length) {
+                    textElement.innerHTML += text.charAt(i);
+                    i++;
+                    setTimeout(typeWriter, 500);
+                }
+            }
+
+            typeWriter();
+        }
+
+        startTypingAnimation();
+
+        setInterval(startTypingAnimation, 10000);
+    </script>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

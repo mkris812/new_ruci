@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruci</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
+    
+      
+            
+    </head>
+    
+    <body style="font-family: 'Source Serif 4', serif;">
+    <header class="relative  h-[50vh]  lg:h-screen">
+        <div class="relative overflow-hidden h-[50vh] lg:h-screen">
+
+            <!-- <img class="absolute  h-[40vh] lg:h-[85vh] z-10   lg:right-24 bottom-0 right-[4vh] blur-2xl  md:bottom-10 animate-spin-slow"
+                src="../img/a3.png" alt=""> -->
+            <img class="absolute  h-[40vh] lg:h-[85vh] z-10    right-[10vh] lg:right-24 bottom-0 md:bottom-10 "
+                src="../img/p2.png" alt="">
+           
+
+
+            <div id="header"
+                class="fixed bg-gradient-to-l to-cyan-300 from-customBlue   top-0 left-0  w-full  z-10 shadow-2xl  ">
+
+
+
+                <nav class=" px-10   py-4 flex">
+                    <div>
+                        <a href="#"><img class="w-16" src="../img/logo.png" alt="RUCI"></a>
+                    </div>
+                    <div class="ml-auto pt-3 flex gap-10">
+                        <div class="hidden  lg:block">
+                            <ul  class="flex gap-5">
+
+                                <li
+                                    class="hover:text-secondaryc hover:border-b-2 pb-2 hover:transition-transform hover:easy-in-out hover:border-secondaryc ">
+                                    <a href="index.html">Home</a>
+                                </li>
+                                <li
+                                    class="hover:text-secondaryc hover:border-b-2 pb-2 hover:transition-transform hover:easy-in-out hover:border-secondaryc ">
+                                    <a href="product.html">Products</a>
+                                </li>
+                                <li
+                                    class="hover:text-secondaryc hover:border-b-2 pb-2 hover:transition-transform hover:easy-in-out hover:border-secondaryc ">
+                                    <a href="about.html">About us</a>
+                                </li>
+                                <li
+                                    class="hover:text-secondaryc hover:border-b-2 pb-2 hover:transition-transform hover:easy-in-out hover:border-secondaryc ">
+                                    <a href="contact.html">Contact us</a>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                        <div class="hidden  lg:block">
+                            <a class="px-3 py-2 bg-cyan-500 rounded-3xl shadow-lg text-white " href="#">Download</a>
+                        </div>
+
+                        <div id="menu-bar" class="text-black ml-auto  pr-1 font-bold  hover:text-white lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-9 h-9">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                            </svg>
+                        </div>
+                    </div>
+                </nav>
+
+                <nav class="">
+
+                    <div id="mobil-menu" class=" backdrop-blur-xl bg-transparent border-customBlue    transform translate-x-full opacity-0 transition ease-out duration-500 z-50 
+                     shadow-lg rounded-tl-3xl shadow-black bottom-0 w-2/3 hidden h-[100vh] fixed text-4xl text-black top-0 right-0">
+
+
+                        <div class="bg-transparent backdrop-blur-xl absolute top-0  w-full h-20 rounded-tl-3xl "></div>
+
+
+                        <div class="flex">
+                            <ul class="gap-7 flex px-10 py-10 mt-12 text-lg flex-col">
+
+                                <li><a href="index.html"
+                                        class="hover:text-secondaryc flex  hover:border-b-2 border-secondaryc ">
+                                        <span> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="w-4 h-5 mr-1 mt-1">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                                            </svg>
+                                        </span> Home</a></li>
+                                <li><a href="product.html"
+                                        class="hover:text-secondaryc flex  hover:border-b-2 border-secondaryc ">
+                                        <span> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="w-4 h-5 mr-1 mt-1">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                                            </svg>
+                                        </span> Products</a></li>
+                                <li><a href="about.html"
+                                        class="hover:text-secondaryc flex  hover:border-b-2 border-secondaryc ">
+                                        <span> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="w-4 h-5 mr-1 mt-1">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                                            </svg>
+                                        </span> About</a></li>
+                                <li><a href="contact.html"
+                                        class="hover:text-secondaryc flex  hover:border-b-2 border-secondaryc ">
+                                        <span> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="w-4 h-5 mr-1 mt-1">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                                            </svg>
+                                        </span> Contact us</a></li>
+                            </ul>
+
+                        </div>
+                        <div id="no-menu" class="absolute top-7 hover:text-black text-white  right-10">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-8 h-8">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                            </svg>
+
+                        </div>
+                    </div>
+                </nav>
+
+
+            </div>
+        </div>
+    </header>
+    
+   
+       
+    <div class="container rounded-t-3xl  mx-auto  px-4 py-8">
+      
+        <div class=" flex justify-center gap-5 items-center mb-8">
+            <a class="flex items-center justify-center px-4 py-2 rounded-full bg-cyan-300 text-white hover:bg-cyan-400 focus:outline-none focus:bg-cyan-400 transition duration-300 ease-in-out" href="#">
+                <svg  xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 48 48">
+                    <path fill="#e0e0e0" d="M5.5,40.5h37c1.933,0,3.5-1.567,3.5-3.5V11c0-1.933-1.567-3.5-3.5-3.5h-37C3.567,7.5,2,9.067,2,11v26C2,38.933,3.567,40.5,5.5,40.5z"></path><path fill="#d9d9d9" d="M26,40.5h16.5c1.933,0,3.5-1.567,3.5-3.5V11c0-1.933-1.567-3.5-3.5-3.5h-37C3.567,7.5,2,9.067,2,11L26,40.5z"></path><path fill="#eee" d="M6.745,40.5H42.5c1.933,0,3.5-1.567,3.5-3.5V11.5L6.745,40.5z"></path><path fill="#e0e0e0" d="M25.745,40.5H42.5c1.933,0,3.5-1.567,3.5-3.5V11.5L18.771,31.616L25.745,40.5z"></path><path fill="#ca3737" d="M42.5,9.5h-37C3.567,9.5,2,9.067,2,11v26c0,1.933,1.567,3.5,3.5,3.5H7V12h34v28.5h1.5c1.933,0,3.5-1.567,3.5-3.5V11C46,9.067,44.433,9.5,42.5,9.5z"></path><path fill="#f5f5f5" d="M42.5,7.5H24H5.5C3.567,7.5,2,9.036,2,11c0,1.206,1.518,2.258,1.518,2.258L24,27.756l20.482-14.497c0,0,1.518-1.053,1.518-2.258C46,9.036,44.433,7.5,42.5,7.5z"></path><path fill="#e84f4b" d="M43.246,7.582L24,21L4.754,7.582C3.18,7.919,2,9.297,2,11c0,1.206,1.518,2.258,1.518,2.258L24,27.756l20.482-14.497c0,0,1.518-1.053,1.518-2.258C46,9.297,44.82,7.919,43.246,7.582z"></path>
+                    </svg>
+                 Send Mail
+            </a>
+            
+            <a class="flex items-center justify-center px-4 py-2 rounded-full bg-green-400 text-white hover:bg-green-500 focus:outline-none focus:bg-green-500 transition duration-300 ease-in-out" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 48 48">
+                    <path fill="#fff" d="M4.9,43.3l2.7-9.8C5.9,30.6,5,27.3,5,24C5,13.5,13.5,5,24,5c5.1,0,9.8,2,13.4,5.6C41,14.2,43,18.9,43,24	c0,10.5-8.5,19-19,19c0,0,0,0,0,0h0c-3.2,0-6.3-0.8-9.1-2.3L4.9,43.3z"></path><path fill="#fff" d="M4.9,43.8c-0.1,0-0.3-0.1-0.4-0.1c-0.1-0.1-0.2-0.3-0.1-0.5L7,33.5c-1.6-2.9-2.5-6.2-2.5-9.6	C4.5,13.2,13.3,4.5,24,4.5c5.2,0,10.1,2,13.8,5.7c3.7,3.7,5.7,8.6,5.7,13.8c0,10.7-8.7,19.5-19.5,19.5c-3.2,0-6.3-0.8-9.1-2.3	L5,43.8C5,43.8,4.9,43.8,4.9,43.8z"></path><path fill="#cfd8dc" d="M24,5c5.1,0,9.8,2,13.4,5.6C41,14.2,43,18.9,43,24c0,10.5-8.5,19-19,19h0c-3.2,0-6.3-0.8-9.1-2.3L4.9,43.3	l2.7-9.8C5.9,30.6,5,27.3,5,24C5,13.5,13.5,5,24,5 M24,43L24,43L24,43 M24,43L24,43L24,43 M24,4L24,4C13,4,4,13,4,24	c0,3.4,0.8,6.7,2.5,9.6L3.9,43c-0.1,0.3,0,0.7,0.3,1c0.2,0.2,0.4,0.3,0.7,0.3c0.1,0,0.2,0,0.3,0l9.7-2.5c2.8,1.5,6,2.2,9.2,2.2	c11,0,20-9,20-20c0-5.3-2.1-10.4-5.8-14.1C34.4,6.1,29.4,4,24,4L24,4z"></path><path fill="#40c351" d="M35.2,12.8c-3-3-6.9-4.6-11.2-4.6C15.3,8.2,8.2,15.3,8.2,24c0,3,0.8,5.9,2.4,8.4L11,33l-1.6,5.8l6-1.6l0.6,0.3	c2.4,1.4,5.2,2.2,8,2.2h0c8.7,0,15.8-7.1,15.8-15.8C39.8,19.8,38.2,15.8,35.2,12.8z"></path><path fill="#fff" fill-rule="evenodd" d="M19.3,16c-0.4-0.8-0.7-0.8-1.1-0.8c-0.3,0-0.6,0-0.9,0s-0.8,0.1-1.3,0.6c-0.4,0.5-1.7,1.6-1.7,4	s1.7,4.6,1.9,4.9s3.3,5.3,8.1,7.2c4,1.6,4.8,1.3,5.7,1.2c0.9-0.1,2.8-1.1,3.2-2.3c0.4-1.1,0.4-2.1,0.3-2.3c-0.1-0.2-0.4-0.3-0.9-0.6	s-2.8-1.4-3.2-1.5c-0.4-0.2-0.8-0.2-1.1,0.2c-0.3,0.5-1.2,1.5-1.5,1.9c-0.3,0.3-0.6,0.4-1,0.1c-0.5-0.2-2-0.7-3.8-2.4	c-1.4-1.3-2.4-2.8-2.6-3.3c-0.3-0.5,0-0.7,0.2-1c0.2-0.2,0.5-0.6,0.7-0.8c0.2-0.3,0.3-0.5,0.5-0.8c0.2-0.3,0.1-0.6,0-0.8	C20.6,19.3,19.7,17,19.3,16z" clip-rule="evenodd"></path>
+                    </svg>
+                Send Whatsapp
+            </a>
+            
+    
+        </div>
+        <div class="max-w-4xl mx-auto">
+            <h1 class="bg-gradient-to-l mb-5 to-cyan-300 from-customBlue text-3xl lg:text-7xl bg-clip-text text-transparent font-bold">
+                Banana Chips
+            </h1>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                <div>
+                    <div class="mb-8">
+                        <h2 class="bg-gradient-to-l mb-3 to-cyan-300 from-customBlue text-lg lg:text-2xl bg-clip-text text-transparent font-bold">
+                            Ingredients
+                        </h2>
+                        <ul class="list-disc ml-5 text-base text-gray-800">
+                            <li>Bananas</li>
+                            <li>Oil</li>
+                            <li>Salt</li>
+                        </ul>
+                    </div>
+                    <div class="mb-8">
+                        <p class="bg-gradient-to-l mb-3 to-cyan-300 from-customBlue text-lg lg:text-2xl bg-clip-text text-transparent font-bold">
+                            Weight
+                        </p>
+                        <p class="text-base text-gray-800">500g</p>
+                    </div>
+                    <div class="mb-8">
+                        <p class="bg-gradient-to-l mb-3 to-cyan-300 from-customBlue text-lg lg:text-2xl bg-clip-text text-transparent font-bold">
+                            Brand
+                        </p>
+                        <p class="text-base text-gray-800">RUCI</p>
+                    </div>
+                    <div class="mb-8">
+                        <h2 class="bg-gradient-to-l mb-3 to-cyan-300 from-customBlue text-lg lg:text-2xl bg-clip-text text-transparent font-bold">
+                            Description
+                        </h2>
+                        <p class="text-justify text-gray-800">Banana chips are crispy, thinly sliced pieces of bananas that are typically fried or baked until they achieve a crunchy texture. They are a popular snack in many parts of the world and are enjoyed for their sweet flavor and satisfying crunch. Banana chips can be made from ripe or unripe bananas, and they may be seasoned with salt or sugar depending on personal preference. They can be eaten on their own as a snack or used as a topping for desserts, salads, or breakfast bowls. Additionally, some varieties of banana chips are coated with chocolate or other flavorings for added taste. Overall, banana chips offer a delicious and convenient way to enjoy the natural sweetness of bananas in a crispy snack format.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+           
+       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <footer class="bg-white  mt-32 rounded-t-3xl  pt-20 shadow-inner shadow-black  text-black">
+                <div class="flex flex-col sm:flex-row gap-5 w-full justify-between px-5 pb-14 lg:px-20 lg:pb-32">
+                    <!-- First Column -->
+                    <div  class="flex flex-col">
+                       <a href="index.html#home"><img src="../img/logo.png" alt="" class="w-28 "></a> 
+                        <p>Natural food product</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-square btn-outline-light rounded-circle me-1" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-square btn-outline-light rounded-circle me-1" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square btn-outline-light rounded-circle me-1" href=""><i class="fab fa-youtube"></i></a>
+                            <a class="btn btn-square btn-outline-light rounded-circle me-0" href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+            
+                    <!-- Second Column -->
+                    <div  class="flex flex-col">
+                        <p class=" font-bold text-lg" >Address 
+                            <div class="w-14 h-1 mb-2 bg-secondaryc"></div>
+                        </p>
+                        <div class="group mt-2">
+                            <a class="btn btn-link flex  group-hover:transition group-hover:translate-x-3 group-hover:text-secondaryc   " href="">  <span class=" group-hover:text-secondaryc  " ><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 mt-1 h-4">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                            </svg> </span>India
+                            </a>
+                        </div>
+                        <div class="group mt-2">
+                            <a class="btn btn-link flex  group-hover:transition group-hover:translate-x-3 group-hover:text-secondaryc   " href="">  <span class=" group-hover:text-secondaryc  " ><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 mt-1 h-4">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                            </svg> </span>ruci@gmail.com
+                            </a>
+                        </div>
+        
+                    </div>
+            
+                    <!-- Third Column -->
+                    <div  class="flex flex-col ">
+                        <p class=" font-bold text-lg " >Quick Links
+                            <div class="w-14 h-1 mb-2 bg-secondaryc "></div>
+                        </p>
+        
+                        <div class="group mt-2">
+                            <a class="btn btn-link flex  group-hover:transition group-hover:translate-x-3 group-hover:text-secondaryc   " href="index.html">  <span class=" group-hover:text-secondaryc  " ><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 mt-1 h-4">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                            </svg> </span> Home
+                            </a>
+                        </div>
+                        <div class="group mt-2">
+                            <a class="btn btn-link flex  group-hover:transition group-hover:translate-x-3 group-hover:text-secondaryc   " href="product.html">  <span class=" group-hover:text-secondaryc  " ><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 mt-1 h-4">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                            </svg> </span> Products
+                            </a>
+                        </div>
+                        <div class="group mt-2">
+                            <a class="btn btn-link flex  group-hover:transition group-hover:translate-x-3 group-hover:text-secondaryc   " href="about.html">  <span class=" group-hover:text-secondaryc  " ><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 mt-1 h-4">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                            </svg> </span> About Us
+                            </a>
+                        </div>
+                        <div class="group mt-2">
+                            <a class="btn btn-link flex  group-hover:transition group-hover:translate-x-3 group-hover:text-secondaryc   " href="contact.html">  <span class=" group-hover:text-secondaryc  " ><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 mt-1 h-4">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                            </svg> </span> Contact Us
+                            </a>
+                        </div>
+                        
+                        
+        
+                    </div>
+            
+                    <!-- Fourth Column -->
+                    <div class="flex flex-col">
+                        <p class=" font-bold text-lg " >Subscribe
+                            <div class="w-14 h-1 mb-2 bg-secondaryc "></div>
+                        </p>
+                        <p class="  text-lg" > </p>
+                        <div class="position-relative mx-auto" style="max-width: 400px;">
+                            <input class="form-control bg-transparent w-100 py-3 px-2 border-secondaryc border-2 focus-visible:border-secondaryc rounded-l-3xl" type="text" placeholder="Your email">
+                            <button type="button" class=" bg-secondaryc px-2 py-3 text-white position-absolute top-0 end-0 mt-2 me-2 rounded-r-3xl">Sign-Up</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Copyright Section -->
+                <div  class="container-fluid">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 text-center text-md-start  mb-md-0">
+                                &copy; <a href="#">Ruci</a>, All Right Reserved.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+               </footer>
+               
+
+
+    <script>
+        function startTypingAnimation() {
+            const textElement = document.getElementById('typing-text');
+            const text = textElement.innerText;
+            textElement.innerText = '';
+
+            let i = 0;
+            function typeWriter() {
+                if (i < text.length) {
+                    textElement.innerHTML += text.charAt(i);
+                    i++;
+                    setTimeout(typeWriter, 500);
+                }
+            }
+
+            typeWriter();
+        }
+
+        startTypingAnimation();
+
+        setInterval(startTypingAnimation, 10000);
+    </script>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
